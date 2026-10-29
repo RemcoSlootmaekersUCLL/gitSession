@@ -19,6 +19,18 @@ git restore --staged
 
 <sub>Belangrijk verschil ^^</sub>
 
+Of als je commit een typefout heeft, of je wil iets verduidelijken:
+
+```
+git commit -m "this is the commit message
+
+Message details go here. If this is the last commit on a branch, this will be shown in the PR details too"
+```
+
+```
+git commit --amend
+```
+
 ## Projecten
 
 In projecten, wanneer je met een groep werkt en merge conflicts hebt in een PR:

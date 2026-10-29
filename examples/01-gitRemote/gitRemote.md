@@ -38,4 +38,4 @@ Hierna voegen we je nieuwe GitHub repository toe als origin. Probeer deze zelf e
 
 </details>
 
-Daarna push je naar je eigen repository.
+Daarna push je naar je eigen repository. Bij de eerste push naar een nieuwe remote (dus ook voor elke nieuwe branch) moet je de optie `--set-upstream origin <branch>` toevoegen.

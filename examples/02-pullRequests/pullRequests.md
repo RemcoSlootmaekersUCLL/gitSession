@@ -18,3 +18,22 @@ Maak nu een change aan **dezelfde lijn** die je net in `eerste-branch` hebt vera
 Push deze change nu naar je tweede branch.
 
 Hierna ga je naar GitHub, en open **2 Pull Requests** van je nieuwe branches naar `main`. De eerste merge je gewoon. Hierna ga je terug naar de tweede PR en zie je een merge conflict opduiken. Waarom? Wat doen we in een project ter preventie hiervan?
+
+Los de merge conflict op in je IDE, maar commit nog niets. We gaan nog een paar commando's leren hierbij.
+
+Stel er gaat iets mis tijdens het oplossen van conflicten, dan kun je altijd dit commando uitvoeren:
+
+```
+git merge --abort
+```
+
+Dit revert alles tot vóór de merge. Het reset dus alles tot het laatste wat je huidige branch kent van al zijn commits.\
+Als alles goed gaat, maak je geen commit in de CLI. Je zet je merge verder. Dit dus met:
+
+```
+git merge --continue
+```
+
+Hierna verschijnt Vim of nano (afhankelijk van je git instellingen) en kun je de merge vervolledigen. Bij Vim verwacht ik nog een aantal vragen te krijgen, dus wees gerust in ze te stellen, ook al hebben ze niets met de git commando's te maken!
+
+Hierna kun je gerust `git push` uitvoeren.
